@@ -1,5 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { ReactComponent as MySvg } from "./logo.svg"
+import { ReactComponent as WaveSvg } from "./wave.svg"
+
 
 import './SignUp.css';
 
@@ -7,11 +10,13 @@ const FormSignup = ({ submitForm }) => {
 
 
   return (
+    <div>
     <div className='form-content-right'>
       <form  className='form' noValidate>
         <h1>
-          Translate your Sign Language videos in real-time
+          SignTube
         </h1>
+        <MySvg />
         <div className='form-inputs'>
           <label className='form-label'>Name</label>
           <input
@@ -64,6 +69,12 @@ const FormSignup = ({ submitForm }) => {
         </Link>
       </form>
     </div>
+    <div class="wave">
+      <WaveSvg />
+    </div>
+    </div>
+
+
   );
 };
 

@@ -38,7 +38,7 @@ def run2():
 
 @app.route('/upload')
 def transcrip():
-    return transcription.main_func(request.form["filename"])
+    return transcription.main_func('sampleAudio.mp3')
 
 if __name__ == "__main__":
     app.run(debug=True)
