@@ -1,0 +1,12 @@
+body {
+    background: rgba(255, 178, 79, 0.4);
+  }
+  
+  .Main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
