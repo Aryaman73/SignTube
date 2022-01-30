@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from '@mui/material/Button'
+
+import { useGradientBtnStyles } from '@mui-treasury/styles/button/gradient';
+
 
 function App() {
+
+  // reference: https://mui.com/components/buttons/ "customization"
+  // const OrangeButton = styled(Button)({
+  //   backgroundColor: 'rgba(255, 178, 79, 1)',
+  // })
+
+  const styles = useGradientBtnStyles();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="recordButton">
+        <Button classes={styles} onClick={() => {
+          fetch("/run2")
+        }}>
+          Record
+        </Button>
+      </div>
     </div>
   );
 }

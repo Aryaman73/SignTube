@@ -1,3 +1,27 @@
+# HOW TO RUN THIS APP
+
+### Server 
+The backend is run using Flask. The basic command to run the server when you're at the root is:
+
+`python3 server.py`
+
+You will have to install any missing libraries using pip (pip3 if you're on Mac), namely Flask and opencv-python
+
+### Frontend
+The frontend is run using React. Again, at the root, run:
+
+`npm install`
+
+and then to tun the frontend,
+
+`npm start`
+
+The frontend should be available at localhost:3000
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
