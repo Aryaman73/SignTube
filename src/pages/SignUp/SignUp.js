@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import './SignUp.css';
 
@@ -55,12 +56,12 @@ const FormSignup = ({ submitForm }) => {
           />
   
         </div>
-        <button 
-        className='form-input-btn' type='submit'
-        onClick={() => this.nextPath('/Main') }
+        <Link 
+        className='form-input-btn'
+        to='/Main'
         >
           Sign up
-        </button>
+        </Link>
       </form>
     </div>
   );
