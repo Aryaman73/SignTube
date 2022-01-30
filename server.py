@@ -1,6 +1,7 @@
 from flask import Flask
 import subprocess
 # import testPythonScriptNoFunc
+import transcription
 
 # Extra imports for python script
 import mediapipe as mp
@@ -34,6 +35,10 @@ app = Flask(__name__)
 @app.route('/run2')
 def run2():
     subprocess.run(['python3', 'testPythonScriptNoFunc.py'])
+
+@app.route('/upload')
+def transcrip():
+    return transcription.main_func('sampleAudio.mp3')
 
 if __name__ == "__main__":
     app.run(debug=True)
