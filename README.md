@@ -1,4 +1,10 @@
-# HOW TO RUN THIS APP
+# SignTube
+
+Created for QHacks 2022! Devpost Link here: https://devpost.com/software/mutetube
+
+Team Members: Matthew Wong, Elly Yu, Onosen Aziegbe, Aryaman Singh
+
+## How to run this app
 
 ### Server 
 The backend is run using Flask. The basic command to run the server when you're at the root is:
@@ -12,15 +18,15 @@ The frontend is run using React. Again, at the root, run:
 
 `npm install`
 
-and then to tun the frontend,
+and then to run the frontend,
 
 `npm start`
 
-The frontend should be available at localhost:3000
+The frontend should be available at localhost:3000.
 
+----
 
-
-
+Create React App stuff. You've seen this before.
 
 # Getting Started with Create React App
 
